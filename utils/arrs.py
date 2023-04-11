@@ -13,11 +13,19 @@ def get(array, index, default=None):
     """
     if index < 0:
         return default
+
+    if index==0:
+        return default
     lenght=len(array)
+
+
 
     if lenght == 0:
         return default
+
     return array[index]
+
+
 
 
 
